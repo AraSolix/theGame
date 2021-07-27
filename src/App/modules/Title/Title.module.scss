@@ -1,0 +1,12 @@
+@import '../../styles/entrypoint';
+
+.body {
+	@include m10;
+
+	font-size: 50px;
+	font-family: frank-bold;
+
+	@include smallScreen {
+		font-size: 35px;
+	}
+}

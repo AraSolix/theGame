@@ -1,0 +1,48 @@
+@import '../../styles/entrypoint';
+
+.body {
+	@include flexCenterRow;
+	@include m10;
+
+	width: 150px;
+	height: 50px;
+	transition: 0.2s;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 10px;
+
+	&:disabled {
+		background-color: $grey;
+		border: 2px solid $darkGrey;
+		color: $darkGrey;
+	}
+
+	@include smallScreen {
+		width: 260px;
+	}
+}
+
+.red {
+	background-color: $red;
+	border: 2px solid $red;
+
+	&:hover {
+		background-color: $darkRed;
+		cursor: pointer;
+		border: 2px solid $darkRed;
+		color: #fff;
+	}
+}
+
+.grey {
+	background-color: $grey;
+	border: 2px solid $grey;
+	color: $darkGrey;
+
+	&:hover {
+		background-color: $darkGrey;
+		cursor: pointer;
+		border: 2px solid $darkGrey;
+		color: #fff;
+	}
+}

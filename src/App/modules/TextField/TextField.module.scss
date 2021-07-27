@@ -1,0 +1,36 @@
+@import '../../styles/entrypoint';
+
+.body {
+	@include m10;
+
+	.placeholder {
+		font-size: 15px;
+		color: $darkGrey;
+		margin-bottom: 5px;
+	}
+
+	input {
+		height: 50px;
+		width: 350px;
+		padding: 10px;
+		font-family: frank-regular;
+		font-size: 20px;
+		border: 2px solid #000;
+		outline: none;
+		transition: 0.2s;
+		border-radius: 10px;
+
+		@include smallScreen {
+			width: 300px;
+		}
+
+		&:focus {
+			border: 2px solid $red;
+		}
+
+		&:disabled {
+			background-color: $grey;
+			border: 2px solid $darkGrey;
+		}
+	}
+}

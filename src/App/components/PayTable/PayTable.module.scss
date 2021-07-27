@@ -1,0 +1,25 @@
+@import '../../styles/entrypoint';
+
+.body {
+	@include flexCenterColumn;
+	border: 5px solid #000;
+	border-bottom: 10px solid #000;
+	border-top: 10px solid #000;
+	height: 400px;
+	width: 300px;
+	transition: 0.2s;
+	position: relative;
+	margin-left: 30px;
+	background: linear-gradient(180deg, $grey 0%, #fff 50%, $grey 100%);
+	border-radius: 30px;
+
+	@include smallScreen {
+		@include mt20;
+		margin-left: 0px;
+	}
+
+	.header {
+		font-family: frank-bold;
+		color: $red;
+	}
+}

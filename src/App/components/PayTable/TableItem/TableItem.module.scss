@@ -1,0 +1,21 @@
+@import '../../../styles/entrypoint';
+
+.row {
+	border: 2px dotted transparent;
+	padding: 5px;
+	font-size: 15px;
+}
+
+.rowActive {
+	animation: blink 0.2s linear infinite;
+	border: 2px dotted #000;
+	padding: 5px;
+	font-size: 15px;
+}
+
+@keyframes blink {
+	50% {
+		color: $red;
+		border: 2px dotted $red;
+	}
+}

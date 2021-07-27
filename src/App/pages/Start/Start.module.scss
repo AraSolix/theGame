@@ -1,0 +1,26 @@
+@import "../../styles/entrypoint";
+
+.body {
+	@include flexCenterColumn;
+	height: 100%;
+	transition: 0.5s;
+
+	.header {
+		@include flexCenterRow;
+		@include mb20;
+
+		img {
+			@include m10;
+			height: 80px;
+		}
+	}
+
+	.content {
+		display: flex;
+		align-items: flex-end;
+
+		@include smallScreen {
+			@include flexCenterColumn;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+@import '../../../styles/entrypoint';
+
+.body {
+
+  @include flexCenterRow;
+  
+	.block {
+		width: 100px;
+	}
+
+	.divider {
+		border-bottom: 1px solid $grey;
+	}
+}

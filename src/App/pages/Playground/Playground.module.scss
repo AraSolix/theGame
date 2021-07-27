@@ -1,0 +1,37 @@
+@import '../../styles/entrypoint';
+
+.body {
+	@include flexCenterColumn;
+	transition: 0.5s;
+
+	.header {
+		@include flexCenterRow;
+		@include mb20;
+
+		width: 100%;
+
+		img {
+			@include m10;
+			height: 80px;
+		}
+	}
+
+	.playCourt {
+		@include flexCenterRow;
+		
+		@include smallScreen {
+			@include flexCenterColumn;
+		}
+	}
+
+	.content {
+		@include flexBetweenCenterRow;
+		@include mt20;
+
+		align-items: flex-end;
+
+		@include smallScreen {
+			@include flexCenterColumn;
+		}
+	}
+}
